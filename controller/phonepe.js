@@ -7,7 +7,8 @@ const payment = async (req, res) => {
     try {
         const { firstName, lastName, email, mobileNumber, amount } = req.body;
         const merchantOrderId = uniqid();
-        const flowId = uniqid();
+        const prefix = 'FlowId';
+        const flowId = prefix + '_' + uniqid();
         const fullName = `${firstName} ${lastName}`;
 
         // Validate required parameters
