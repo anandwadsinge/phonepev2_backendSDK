@@ -77,6 +77,8 @@ const payment = async (req, res) => {
         res.status(200).json({
             success: true,
             message: "Success",
+            merchantId: 'TESTUAT',
+            flowId: flowId,
             data: {
                 orderId,
                 token: orderToken,
