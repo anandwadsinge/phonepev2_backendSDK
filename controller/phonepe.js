@@ -7,7 +7,7 @@ const payment = async (req, res) => {
     try {
         const { firstName, lastName, email, mobileNumber, amount } = req.body;
         const merchantOrderId = uniqid();
-        const prefix = 'flowId';
+        const prefix = 'FlowId';
         const flowId = prefix + '_' + uniqid();
         const fullName = `${firstName} ${lastName}`;
 
