@@ -109,12 +109,12 @@ const callback = async (req, res) => {
             });
         }
 
-        const CallbackResponse = new CallbackResponse({
+        const callbackResponse = new CallbackResponse({
             event: data.event,
             payload: data.payload,
         });
 
-        await CallbackResponse.save();
+        await callbackResponse.save();
 
         // console.log("Data saved to database:", callbackResponse);
         res.status(200).send({ message: "Callback data saved successfully" });
