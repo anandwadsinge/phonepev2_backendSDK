@@ -96,9 +96,6 @@ const payment = async (req, res) => {
 };
 
 const callback = async (req, res) => {
-    // console.log("Callback URL hit");
-    // console.log("Received data:", req.body);
-
     const data = req.body;
  
     try {
