@@ -1,7 +1,7 @@
 const axios = require("axios");
 const uniqid = require("uniqid");
 const { getToken } = require("./auth");
-const CallbackResponse = require("./callbackModel");
+const callbackresponses = require("./callbackModel");
 
 const payment = async (req, res) => {
     try {
@@ -109,12 +109,12 @@ const callback = async (req, res) => {
             });
         }
 
-        const callbackResponse = new CallbackResponse({
+        const callbackresponses = new callbackresponses({
             event: data.event,
             payload: data.payload,
         });
 
-        await callbackResponse.save();
+        await callbackresponses.save();
 
         // console.log("Data saved to database:", callbackResponse);
         res.status(200).send({ message: "Callback data saved successfully" });
