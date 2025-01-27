@@ -96,14 +96,14 @@ const payment = async (req, res) => {
 };
 
 const callback = async (req, res) => {
-    console.log("Callback URL hit");
-    console.log("Received data:", req.body);
+    // console.log("Callback URL hit");
+    // console.log("Received data:", req.body);
 
     const data = req.body;
-
+ 
     try {
         if (!data.event || !data.payload) {
-            console.log("Invalid data format");
+            console.error("Invalid data format", error);
             return res.status(400).send({
                 message: "Invalid data format. 'event' and 'payload' are required.",
             });
@@ -116,7 +116,7 @@ const callback = async (req, res) => {
 
         await callbackResponse.save();
 
-        console.log("Data saved to database:", callbackResponse);
+        // console.log("Data saved to database:", callbackResponse);
         res.status(200).send({ message: "Callback data saved successfully" });
     } catch (error) {
         console.error("Error saving callback data:", error);
