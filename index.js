@@ -52,9 +52,9 @@ app.use("/api", routes);
 
 // Start the server
 app.listen(port, () => {
-    console.log(`App is running on port ${port}`);
+    // console.log(`App is running on port ${port}`);
 
     // Log the static ngrok domain
-    const staticNgrokURL = "https://normally-worthy-piglet.ngrok-free.app";
-    console.log(`Use this URL to send POST requests: ${staticNgrokURL}/api/callback`);
+    const staticNgrokURL = process.env.CALLBACKURL;
+    // console.log(`Use this URL to send POST requests: ${staticNgrokURL}/api/callback`);
 });
