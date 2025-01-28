@@ -13,7 +13,7 @@ This repository contains the backend implementation for the PhonePe V2 integrati
 
 Before running the application, ensure you have the following:
 
-- [Node.js](https://nodejs.org/) installed (v14 or later recommended).
+- [Node.js](https://nodejs.org/) installed (v16 or later recommended).
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for managing dependencies.
 
 ## Installation
