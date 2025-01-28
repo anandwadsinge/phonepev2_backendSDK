@@ -1,13 +1,12 @@
-# PhonePe V2 Backend SDK
+# PhonePe V2 Server-Side SDK Integration
 
-This repository contains the backend implementation for the PhonePe V2 integration using Node.js and Express.js. The backend is responsible for handling the payment flow and providing APIs for initiating standard payments.
+This repository provides the backend implementation for integrating PhonePe V2 SDKs using Node.js. It handles the server-side logic for payment flows.
 
 ## Features
 
-- Built with Node.js and Express.js.
-- Integration with PhonePe payment gateway.
-- Support for standard payment flows.
-- Secure and lightweight backend service.
+- Implemented the Fetch Auth Token API (Authorization) to authorize subsequent API calls.
+- Once authenticated using the Auth Token, the payment initiation process is triggered.
+- Implemented the callback mechanism to handle the S2S (Server-to-Server) response, which is stored in backend for further processing.
 
 ## Prerequisites
 
