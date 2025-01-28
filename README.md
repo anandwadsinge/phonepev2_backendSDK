@@ -62,7 +62,6 @@ A successful request will return a response like:
 
     {
     "success": true,
-    "message": "Success",
     "merchantId": "<your-merchant-id>",
     "flowId": "FlowId_11ete3m6duvbfh",
     "data": {
