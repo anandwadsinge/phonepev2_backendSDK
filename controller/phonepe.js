@@ -77,8 +77,7 @@ const payment = async (req, res) => {
         // Send the extracted data to the frontend
         res.status(200).json({
             success: true,
-            message: "Success",
-            merchantId: 'TESTUAT',
+            merchantId: process.env.GRANT_TYPE,
             flowId: flowId,
             data: {
                 orderId,
