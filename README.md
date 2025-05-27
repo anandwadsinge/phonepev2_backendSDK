@@ -17,16 +17,16 @@ Before running the application, ensure you have the following:
 
 ## Installation
 
-Clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/anandwadsinge/phonepev2_backendSDK.git
    cd phonepev2_backendSDK
 
-Install dependencies:
+2. Install dependencies:
     
     npm install
 
-Create a .env file in the root directory and add the required environment variables:
+3. Create a .env file in the root directory and add the required environment variables:
 
     PORT=3000
     MONGO_URI=<your-mongo-database-uri>
@@ -36,7 +36,7 @@ Create a .env file in the root directory and add the required environment variab
     GRANT_TYPE=client_credentials
     CALLBACKURL=<your-callbackUrl>
 
-Run the application to start the backend server, use the following command:
+4. Run the application to start the backend server, use the following command:
 
     npm start
 
