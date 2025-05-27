@@ -17,7 +17,7 @@ Before running the application, ensure you have the following:
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/anandwadsinge/phonepev2_backendSDK.git
    cd phonepev2_backendSDK
@@ -33,11 +33,10 @@ Create a .env file in the root directory and add the required environment variab
     CLIENT_ID=<your-client-id>
     CLIENT_SECRET=<your-client-secret>
     CLIENT_VERSION=<your-client-version>
-    GRANT_TYPE=<your-merchant-id>
+    GRANT_TYPE=client_credentials
     CALLBACKURL=<your-callbackUrl>
 
-Running the Application
-To start the backend server, use the following command:
+Run the application to start the backend server, use the following command:
 
     npm start
 
@@ -62,7 +61,7 @@ A successful request will return a response like:
 
     {
     "success": true,
-    "merchantId": "<your-merchant-id>",
+    "merchantId": "<specified-merchant-id>",
     "flowId": "FlowId_11ete3m6duvbfh",
     "data": {
         "orderId": "OMO2501262220148679958162",

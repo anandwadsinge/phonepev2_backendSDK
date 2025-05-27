@@ -33,7 +33,7 @@ async function fetchOAuthToken() {
     if (data && data.access_token && data.expires_at) {
       accessToken = data.access_token;
       tokenExpiry = data.expires_at * 1000; // Convert expires_at (seconds) to milliseconds
-      // console.log("New token fetched successfully:", accessToken);
+      console.log("New token fetched successfully:", accessToken);
     } else {
       console.error("Failed to fetch access token: Missing expiration details.", data);
     }

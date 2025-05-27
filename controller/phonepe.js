@@ -24,10 +24,10 @@ const payment = async (req, res) => {
             amount: amount * 100,
             expireAfter: 320,
             metaInfo: {
-                flowId,
-                fullName,
-                mobileNumber,
-                email,
+                "udf1": flowId,
+                "udf2": fullName,
+                "udf3": mobileNumber,
+                "udf4": email,
             },
             paymentFlow: {
                 type: "PG_CHECKOUT",
@@ -77,7 +77,7 @@ const payment = async (req, res) => {
         // Send the extracted data to the frontend
         res.status(200).json({
             success: true,
-            merchantId: process.env.GRANT_TYPE,
+            merchantId: process.env.MID,
             flowId: flowId,
             data: {
                 orderId,
