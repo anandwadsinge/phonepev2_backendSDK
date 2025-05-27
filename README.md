@@ -23,11 +23,11 @@ Before running the application, ensure you have the following:
    cd phonepev2_backendSDK
 
 2. Install dependencies:
-    
+    ```bash
     npm install
 
 3. Create a .env file in the root directory and add the required environment variables:
-
+    ```bash
     PORT=3000
     MONGO_URI=<your-mongo-database-uri>
     CLIENT_ID=<your-client-id>
@@ -37,7 +37,7 @@ Before running the application, ensure you have the following:
     CALLBACKURL=<your-callbackUrl>
 
 4. Run the application to start the backend server, use the following command:
-
+    ```bash
     npm start
 
 The server will start on the specified PORT or the default port 3000.
